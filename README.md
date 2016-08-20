@@ -6,8 +6,8 @@
 
   
        "hoanghiep/template": "dev-master",
-       "hoanghiep/library":"dev-master"
-        "laravelcollective/html": "5.2.*"
+       "hoanghiep/library":"dev-master",
+      "laravelcollective/html": "5.2.*"
        
        Chạy lệnh : composer install
 
