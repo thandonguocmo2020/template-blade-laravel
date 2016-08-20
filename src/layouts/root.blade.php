@@ -19,15 +19,11 @@ and open the template in the editor.
             <div class="container">
                 <div class="row">
                     <!-- START SIDEBAR -->
-                    <div class="sidebar"> 
-                        @include("layouts.blocks.sidebar") 
-                    </div>
+                      @include("layouts.blocks.sidebar") 
                     <!-- END SIDEBAR -->
 
                     <!-- START CONTENT -->
-                    <div class="content">
-                        @include("layouts.blocks.content") 
-                    </div>
+                    @include("layouts.blocks.content") 
                     <!-- END CONTENT -->
                 </div>
             </div>
