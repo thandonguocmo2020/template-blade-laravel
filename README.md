@@ -7,6 +7,8 @@
   
        "hoanghiep/template": "dev-master",
        "hoanghiep/library":"dev-master"
+       "hoanghiep/template": "dev-master",
+        "laravelcollective/html": "5.2.*"
        
        Chạy lệnh : composer install
 
@@ -20,7 +22,17 @@ b3. Thêm dịch vụ trong config/app.php
        /***** ****/
        Hoanghiep\Template\HoanghiepTemplateProvider::class,
        Hoanghiep\Library\HoanghiepLibraryProvider::class,
+       Collective\Html\HtmlServiceProvider::class,
       ]
+      
+    trong alias thêm :
+      
+           'aliases' => [
+            // ...
+              'Form' => Collective\Html\FormFacade::class,
+              'Html' => Collective\Html\HtmlFacade::class,
+            // ...
+          ],
  
  b4. Chạy lệnh xuất bản các tập tin cần thiết 
  
