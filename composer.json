@@ -1,0 +1,22 @@
+{
+    "name": "hoanghiep/template",
+    "description": "auto create blade in template blade on laravel",
+    "license": "MIT",
+    "type":              "library",
+    "authors": [
+        {
+            "name": "hoanghiep1x0",
+            "email": "thandonguocmo2020@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+     "require": {
+        "php": ">=5.5.9"
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "Hoanghiep\\Template\\": "src/"
+        }
+    }
+}
