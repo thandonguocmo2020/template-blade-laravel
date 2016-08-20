@@ -96,9 +96,14 @@ class MakeViewCommand extends Command {
     public function createFile($array_file, $path_template_blade, $path) {
 
         if ($array_file == "all") {
+           
             $array_file = config("hoanghiep.create_file");
 
             foreach ($array_file as $key => $value) {
+                
+                if($value == "all"){
+                    continue;
+                }
                 $file_root = $path_template_blade  ."/". "$value" . ".blade.php";
                 $file_new = $path . "/$value" . ".blade.php";
                 if (!file_exists($file_new)) {
